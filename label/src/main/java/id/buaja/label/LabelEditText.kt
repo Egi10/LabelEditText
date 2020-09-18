@@ -97,11 +97,11 @@ class LabelEditText(context: Context, attrs: AttributeSet?) :
         tvError.visibility = View.VISIBLE
     }
 
-    fun setLabelText(label: String) {
-        tieInput.setText(label)
+    fun setText(text: String) {
+        tieInput.setText(text)
     }
 
-    fun getLabelText(): String {
+    fun getText(): String {
         return tieInput.text.toString()
     }
 
