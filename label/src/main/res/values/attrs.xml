@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <declare-styleable name="CustomView">
+    <declare-styleable name="LabelEditText">
         <!-- Controls the initial visibility of the view.  -->
         <attr name="inputType">
             <flag name="none" value="0" />

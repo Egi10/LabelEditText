@@ -19,36 +19,36 @@ class LabelEditText(context: Context, attrs: AttributeSet?) :
     init {
         inflate(context, R.layout.field_input, this)
 
-        attributes = context.obtainStyledAttributes(attrs, R.styleable.CustomView)
+        attributes = context.obtainStyledAttributes(attrs, R.styleable.LabelEditText)
 
         // Label
         tvTitle.includeFontPadding = false
-        tvTitle.text = attributes?.getString(R.styleable.CustomView_labelText)
+        tvTitle.text = attributes?.getString(R.styleable.LabelEditText_labelText)
         tvTitle.setTextSize(
             TypedValue.COMPLEX_UNIT_SP,
-            attributes?.getDimension(R.styleable.CustomView_textSizeLabelText, 14f)!!
+            attributes?.getDimension(R.styleable.LabelEditText_textSizeLabelText, 14f)!!
         )
         tvTitle.setTextColor(
             attributes?.getColor(
-                R.styleable.CustomView_textColorLabelText,
+                R.styleable.LabelEditText_textColorLabelText,
                 ContextCompat.getColor(context, R.color.warm_grey)
             )!!
         )
 
         // Error
         tvError.includeFontPadding = false
-        tvError.text = attributes?.getString(R.styleable.CustomView_errorText)
+        tvError.text = attributes?.getString(R.styleable.LabelEditText_errorText)
         tvError.setTextSize(
             TypedValue.COMPLEX_UNIT_SP,
-            attributes?.getDimension(R.styleable.CustomView_textSizeErrorText, 10f)!!
+            attributes?.getDimension(R.styleable.LabelEditText_textSizeErrorText, 10f)!!
         )
         tvError.setTextColor(
             attributes?.getColor(
-                R.styleable.CustomView_textColorErrorText,
+                R.styleable.LabelEditText_textColorErrorText,
                 ContextCompat.getColor(context, R.color.colorRed)
             )!!
         )
-        when (attributes?.getBoolean(R.styleable.CustomView_errorTextEnabled, false)) {
+        when (attributes?.getBoolean(R.styleable.LabelEditText_errorTextEnabled, false)) {
             true -> {
                 tvError.visibility = View.VISIBLE
             }
@@ -59,9 +59,9 @@ class LabelEditText(context: Context, attrs: AttributeSet?) :
         }
 
         // Input Text
-        tieInput.hint = attributes?.getString(R.styleable.CustomView_hint)
+        tieInput.hint = attributes?.getString(R.styleable.LabelEditText_hint)
 
-        val inputType = attributes?.getInt(R.styleable.CustomView_inputType, 0)
+        val inputType = attributes?.getInt(R.styleable.LabelEditText_inputType, 0)
         setInputType(inputType)
 
         attributes?.recycle()
