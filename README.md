@@ -46,3 +46,7 @@ add code on your layout
         app:inputType="text"
         app:labelText="Coba Aja" />
 ```
+
+## Screenshoot
+
+<img src="https://github.com/Egi10/LabelEditText/blob/master/screenshoot/Screenshot_1600409173.png" width="250">
