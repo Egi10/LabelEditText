@@ -38,13 +38,14 @@ implementation 'com.google.android.material:material:1.2.1'
 add code on your layout
 ```xml
 <id.buaja.label.LabelEditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        app:errorText="Ada Apa Ya"
-        app:hint="Masukan Aja Dulu"
-        app:inputType="text"
-        app:labelText="Coba Aja" />
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    app:errorText="Ada Apa Ya"
+    app:errorTextEnabled="true"
+    app:hint="Masukan Aja Dulu"
+    app:inputType="text"
+    app:labelText="Coba Aja" />
 ```
 
 ## Screenshoot
