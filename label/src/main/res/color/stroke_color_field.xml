@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/pinkish_grey" android:state_enabled="true" /> <!-- stroke enabled -->
+    <item android:color="@color/pinkish_grey" android:state_hovered="true" /> <!-- stroke hovered -->
+    <item android:color="@color/pinkish_grey" android:state_focused="true" /> <!-- stroke focused -->
+    <item android:color="@color/pinkish_grey" /> <!-- unfocused -->
+</selector>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomView">
+        <!-- Controls the initial visibility of the view.  -->
+        <attr name="inputType">
+            <flag name="none" value="0" />
+            <flag name="text" value="1" />
+            <flag name="textPassword" value="2" />
+            <flag name="number" value="3" />
+            <flag name="phone" value="4" />
+        </attr>
+
+        <attr name="errorTextEnabled" format="boolean" />
+        <attr name="errorText" format="string" />
+        <attr name="textSizeErrorText" format="dimension" />
+        <attr name="textColorErrorText" format="reference|color" />
+
+        <attr name="labelText" format="string" />
+        <attr name="textSizeLabelText" format="dimension" />
+        <attr name="textColorLabelText" format="reference|color" />
+
+        <attr name="hint" format="string" />
+    </declare-styleable>
+</resources>
