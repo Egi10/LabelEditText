@@ -51,3 +51,7 @@ add code on your layout
 ## Screenshoot
 
 <img src="https://github.com/Egi10/LabelEditText/blob/master/screenshoot/Screenshot_1600409173.png" width="250">
+
+## License
+
+    Copyright 2020 Julsapargi Nursam
